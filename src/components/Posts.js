@@ -32,9 +32,9 @@ class Posts extends Component {
   }
 }
 
-// 建立一个从（外部的）state对象到(UI 组件的)props对象的映射关系
+// 建立一个从(外部的)state对象到(UI 组件的)props对象的映射关系
 const mapStateToProps = state => ({//将状态转换为属性
-  posts: state.posts.items,
+  posts: state.posts.items,// 映射中属性名是ui组件同名参数，属性值是reducer返回的state
   newPost: state.posts.item
 })
 
