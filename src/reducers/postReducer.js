@@ -2,7 +2,7 @@ import { FETCH_POSTS, NEW_POST } from '../actions/types';
 // reducer的作用: 返回新的状态
 
 const initialState = {
-  items: [],
+  itemss: [],
   item: {}
 }
 
@@ -11,7 +11,7 @@ export default function (state = initialState, action) {//state形参默认赋�
     case FETCH_POSTS:
       return {
         ...state,
-        items: action.payload
+        itemss: action.payload
       }
     case NEW_POST:
       return {
